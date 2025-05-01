@@ -1,4 +1,4 @@
-import webpack from 'webpack';
+import webpack, { sources } from 'webpack';
 import path from 'path';
 import HTMLWebpackPlugin from 'html-webpack-plugin';
 import CopyWebpackPlugin from 'copy-webpack-plugin';
@@ -62,7 +62,8 @@ export default (env: webpack.Configuration) => {
         ],
         devServer: {
             port: 3000,
-        }
+        },
+        devtool: 'source-map',
     }
 
     return config;
