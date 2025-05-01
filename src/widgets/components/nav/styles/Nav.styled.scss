@@ -1,0 +1,23 @@
+@use '../../../../app/styles/var.scss' as *;
+
+.nav {
+    ul {
+        display: flex;
+        gap: 30px;
+
+        li {
+            a {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                color: $black;
+                transition: .2s ease;
+
+                &:hover {
+                    color: $darkgreen;
+                }
+            }
+        }
+    }
+}

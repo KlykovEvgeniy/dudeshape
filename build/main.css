@@ -1,0 +1,7 @@
+@import url(https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap);
+.container{max-width:1200px;margin:0 auto;padding:15px}
+.nav ul{display:flex;gap:30px}.nav ul li a{font-weight:400;font-size:16px;line-height:100%;letter-spacing:0%;color:#161616;transition:.2s ease}.nav ul li a:hover{color:#154444}
+.header{padding-top:20px}.header .wrapper{display:flex;align-items:center;justify-content:space-between}
+.right-nav{display:flex;align-items:center;gap:20px}
+button{background:none;border:none;padding:10px}
+*{margin:0;padding:0;box-sizing:border-box;color:#000;list-style-type:none;text-decoration:none;font-family:DM Sans}html{scroll-behavior:smooth}body,html{font-size:16px}
