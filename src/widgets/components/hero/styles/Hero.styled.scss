@@ -1,5 +1,13 @@
 @use "../../../../app/styles/var.scss" as *;
 
+.hero{
+    margin-bottom: 50px;
+
+    @media screen and (max-width:1200px) {
+        margin-bottom: 20px;
+    }
+}
+
 .wrapper-hero {
     display: flex;
     align-items: center;

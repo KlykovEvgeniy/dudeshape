@@ -1,0 +1,55 @@
+@use "../../../../app/styles/var.scss" as *;
+
+.about {
+    margin-bottom: 50px;
+
+    @media screen and (max-width: 1200px) {
+        margin-bottom: 20px;
+    }
+    .about-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media screen and (max-width: 1200px) {
+            flex-direction: column;
+        }
+
+        .about__img{
+            position: relative;
+            z-index: -1;
+            box-shadow: 20px 20px 0 0 #DEE4E2;
+            width: 50%;
+            height: 100%;
+
+            @media screen and (max-width: 1200px) {
+                box-shadow: none;
+                width: 80%;
+                margin-bottom: 20px;
+            }
+
+            @media screen and (max-width: 768px) {
+                width: 100%;
+            }
+        }
+
+        .about__title {
+            color: $green;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 40px;
+            letter-spacing: 0%;
+            margin-bottom: 10px;
+        }
+
+        .about__description {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 25px;
+            letter-spacing: 0%;
+            max-width: 436px;
+            color: $par;
+            margin-bottom: 20px;
+        }
+    }
+}

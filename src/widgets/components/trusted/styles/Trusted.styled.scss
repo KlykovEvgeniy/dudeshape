@@ -1,0 +1,39 @@
+@use "../../../../app/styles/var.scss" as *;
+
+.trusted {
+    margin-bottom: 50px;
+
+    @media screen and (max-width: 1200px) {
+        margin-bottom: 20px;
+    }
+
+    .trusted__title {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: $green;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .trusted__main{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        aspect-ratio: 18/1;
+
+        @media screen and (max-width: 768px) {
+            display: grid;
+            grid-template-columns: repeat(3, 104px);
+            justify-content: space-around;
+            align-items: center;
+            gap: 20px;
+        }
+
+        @media  screen and (max-width: 400px) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

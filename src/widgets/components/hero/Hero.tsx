@@ -1,6 +1,6 @@
 import { Container } from '../container/Container'
 import chair from './assets/chair.jpg';
-import { Button } from '../../../shared/components/Button/Button';
+import { Button } from '../../../shared';
 import './styles/Hero.styled.scss';
 
 export const Hero = () => {

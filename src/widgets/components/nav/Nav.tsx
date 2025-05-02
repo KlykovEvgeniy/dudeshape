@@ -7,10 +7,10 @@ export const Nav = () => {
     return (
         <nav className="nav">
             <ul>
-                <li><a href="/#">Home</a></li>
-                <li><a href="/#">About</a></li>
-                <li><a href="/#">Features</a></li>
-                <li><a href="/#">Contact</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Contact</a></li>
                 <li>{
                     width <= 768 &&
                     <RightNav />
