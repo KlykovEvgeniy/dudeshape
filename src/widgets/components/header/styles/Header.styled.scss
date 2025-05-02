@@ -16,6 +16,8 @@
     display: none;
     position: relative;
     z-index: 3;
+    border: none;
+    background: none;
 
     @media screen and (max-width: 768px) {
         display: block;
