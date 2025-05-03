@@ -1,4 +1,5 @@
 import { About } from "../about/About"
+import { Furniture } from "../furniture/Furniture";
 import { Hero } from "../hero/Hero"
 import { Trusted } from "../trusted/Trusted";
 import "./styles/Main.styled.scss";
@@ -9,6 +10,7 @@ export const Main = () => {
             <Hero />
             <Trusted />
             <About />
+            <Furniture />
         </main>
     )
 }

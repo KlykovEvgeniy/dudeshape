@@ -14,29 +14,35 @@ export const Header = () => {
     useEffect(() => {
         if (width > 768) {
             setVis(true)
-        } else if(width <= 768) {
+        } else if (width <= 768) {
             setVis(false)
         }
     }, [width]);
 
     const handleClick = () => {
         const styles = document.body.style
-        if(isVis){
+        if (isVis) {
             setVis(false);
             styles.overflowY = 'visible'
-        }else{
+        } else {
             setVis(true);
             styles.overflowY = 'hidden'
         }
     };
+
+    const handleLinkClick = () => {
+        if (width > 768) return;
+        setVis(false);
+        document.body.style.overflowY = 'visible';
+    }
 
     return (
         <header className="header">
             <Container>
                 <div className="wrapper">
                     <Logo />
-                    {isVis && <Nav />}
-                    {width > 768 &&
+                    {isVis && <Nav fn={handleLinkClick} />}
+                    {width > 769 &&
                         <RightNav />
                     }
                     <button onClick={handleClick} className="close" type="button"><Close /></button>
