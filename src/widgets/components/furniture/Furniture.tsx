@@ -7,7 +7,7 @@ import "./styles/Furniture.styled.scss";
 
 
 export const Furniture = () => {
-    const { data } = useGetProductsQuery('');
+    const { data, isLoading, isError } = useGetProductsQuery('');
     const [len, setLen] = useState<number>(0);
     const [val, setVal] = useState<number>(0);
 
@@ -50,7 +50,9 @@ export const Furniture = () => {
                             </button>
                         </div>
                     </div>
-                    <Slider data={data} val={val} />
+                    {isLoading && <h2>Loading...</h2>}
+                    {isError && <h2>Error, try to reload website or browser /:</h2>}
+                    {data && <Slider data={data} val={val} />}
                 </div>
             </Container>
         </section>

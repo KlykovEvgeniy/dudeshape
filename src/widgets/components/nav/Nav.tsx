@@ -12,7 +12,7 @@ export const Nav: FC<NavProps> = ({fn}) => {
                 <li><a onClick={() => fn()} href="#">Home</a></li>
                 <li><a onClick={() => fn()} href="#about">About</a></li>
                 <li><a onClick={() => fn()} href="#furniture">Features</a></li>
-                <li><a onClick={() => fn()} href="#">Contact</a></li>
+                <li><a onClick={() => fn()} href="#contact">Contact</a></li>
                 <li>{
                     width <= 768 &&
                     <RightNav />

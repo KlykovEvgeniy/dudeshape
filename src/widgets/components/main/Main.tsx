@@ -1,4 +1,5 @@
 import { About } from "../about/About"
+import { Contact } from "../contact/Contact";
 import { Furniture } from "../furniture/Furniture";
 import { Hero } from "../hero/Hero"
 import { Trusted } from "../trusted/Trusted";
@@ -11,6 +12,7 @@ export const Main = () => {
             <Trusted />
             <About />
             <Furniture />
+            <Contact />
         </main>
     )
 }

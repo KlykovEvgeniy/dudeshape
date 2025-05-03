@@ -1,0 +1,110 @@
+@use "../../../../app/styles/var.scss" as *;
+
+.contact {
+    margin-bottom: 50px;
+
+    @media screen and (max-width: 1200px) {
+        margin-bottom: 20px;
+    }
+
+    .contact-wrapper {
+        background-color: $form;
+        padding: 80px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        @media screen and (max-width: 768px) {
+            padding: 20px;
+        }
+
+        .contact__title {
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 48px;
+            letter-spacing: 0%;
+            text-align: center;
+            color: $title;
+            max-width: 500px;
+            margin-bottom: 10px;
+            color: #222222;
+
+            @media screen and (max-width: 768px) {
+                font-size: 30px;
+                line-height: 30px;
+            }
+        }
+
+        .contact__description {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0%;
+            text-align: center;
+            max-width: 493px;
+            color: #222222;
+            margin-bottom: 20px;
+
+            @media screen and (max-width: 768px) {
+                font-size: 16px;
+            }
+        }
+
+        form {
+            display: flex;
+            width: min(100%, 471px);
+            position: relative;
+
+            @media screen and (max-width: 768px) {
+                flex-direction: column;
+                position: static;
+            }
+
+            .contact__block {
+                position: relative;
+                width: 100%;
+
+                input {
+                    padding: 15px 120px 15px 50px;
+                    width: 100%;
+                    outline: none;
+                    border: none;
+                    @media screen and (max-width: 768px) {
+                        padding: 20px 5px;
+                    }
+                }
+
+                svg {
+                    position: absolute;
+                    top: 17px;
+                    left: 20px;
+                    width: 16px;
+                    height: 16px;
+
+                    @media screen and (max-width: 768px) {
+                        display: none;
+                    }
+                }
+            }
+
+            .contact__submit {
+                position: absolute;
+                bottom: 8px;
+                height: 70%;
+                right: 20px;
+                padding: 0 20px;
+                border: none;
+                background-color: $green;
+                color: white;
+
+
+                @media screen and (max-width: 768px) {
+                    display: block;
+                    position: static;
+                    height: 50px;
+                }
+
+            }
+        }
+    }
+}
