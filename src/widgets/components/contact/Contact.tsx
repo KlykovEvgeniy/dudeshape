@@ -26,10 +26,10 @@ export const Contact = () => {
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore at dolore.
                     </p>
                     <Formik onSubmit={handleSubmit} initialValues={initialValues}>
-                        <Form autoComplete="off">
+                        <Form >
                             <div className="contact__block">
                                 <Email />
-                                <Field placeholder='Enter your email' type='email' name='email' required />
+                                <Field autoComplete='off' placeholder='Enter your email' type='email' name='email' required />
                             </div>
                             <button className="contact__submit" type="submit">Submit</button>
                         </Form>

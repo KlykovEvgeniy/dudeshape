@@ -1,0 +1,140 @@
+@use "../../../../app/styles/var.scss" as *;
+
+.footer {
+    background-color: $footer;
+    padding: 50px;
+
+    .footer__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+
+        .footer__list {
+            display: flex;
+            gap: 12px;
+        }
+
+        .footer__item__description {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 26px;
+            letter-spacing: 0%;
+            color: white;
+            max-width: 308px;
+            margin-bottom: 40px;
+
+            @media screen and (max-width: 768px) {
+                display: none;
+            }
+        }
+
+        .footer__item__title {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 26px;
+            letter-spacing: 0%;
+            color: white;
+            margin-bottom: 14px;
+        }
+
+        .footer__item_tour{
+            @media screen and (max-width: 400px){
+                display: none;
+            }
+        }
+
+        .footer__item__list__item {
+            margin-bottom: 12px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            a {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                color: white;
+                transition: .2s ease;
+
+                &:hover {
+                    color: $black;
+                }
+            }
+        }
+
+        .footer__item_company{
+            @media  screen and (max-width: 538px) {
+                display: none;
+            }
+        }
+
+        .footer__desription__form {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 23px;
+            letter-spacing: 0%;
+            color: white;
+            max-width: 240px;
+            margin-bottom: 23px;
+        }
+
+        .footer__item_form{
+            @media screen and (max-width: 1200px){
+                display: none;
+            }
+        }
+
+        form {
+            position: relative;
+            width: 100%;
+
+            input {
+                padding: 15px 10px;
+                width: 100%;
+                outline: none;
+                border: none;
+            }
+
+            .footer__button {
+                position: absolute;
+                width: 28px;
+                height: 28px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                top: 10px;
+                right: 10px;
+                border: none;
+                padding: 5px;
+                border-radius: 50%;
+                background-color: #FFB624;
+            }
+        }
+    }
+
+    .footer__bottom {
+        border-top: 1px solid #407980;
+        margin: 30px 0;
+
+        @media screen and (max-width: 400px) {
+            margin: 10px 0;
+        }
+
+        p {
+            margin-top: 20px;
+            text-align: center;
+            color: white;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 100%;
+            letter-spacing: 0%;
+
+            @media screen and (max-width: 400px) {
+                text-align: left;
+                line-height: 25px;
+            }
+        }
+    }
+}

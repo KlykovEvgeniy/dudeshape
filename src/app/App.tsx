@@ -1,10 +1,11 @@
-import { Header, Main } from "../widgets"
+import { Footer, Header, Main } from "../widgets"
 
 export const App = () => {
     return (
         <>
             <Header />
             <Main />
+            <Footer />
         </>
     )
 }

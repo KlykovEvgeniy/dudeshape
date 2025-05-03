@@ -1,0 +1,14 @@
+.logo{
+    z-index: 1;
+    position: relative;
+
+    svg{
+        width: 150px;
+        height: 30px;
+        margin-bottom: 15px;
+
+        path {
+            fill: white;
+        }
+    }
+}
